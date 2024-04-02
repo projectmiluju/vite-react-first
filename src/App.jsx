@@ -1,16 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Avatar from './components/Avatar'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
       <h1>Hello World</h1>
+      <hr />
+      <Avatar/>
+      <h3>Copyright 2024 by won</h3>
     </>
   )
 }
-
-export default App
