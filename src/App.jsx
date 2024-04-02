@@ -1,4 +1,3 @@
-import './App.css'
 import Avatar from './components/Avatar'
 
 export default function App() {
