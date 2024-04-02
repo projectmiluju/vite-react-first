@@ -2,12 +2,15 @@ import './App.css'
 import Avatar from './components/Avatar'
 
 export default function App() {
+
+  const greet = 'Hello World';
+  const footerMessage = 'Copyright 2024 by won';
   return (
     <>
-      <h1>Hello World</h1>
+      <h1>{greet}</h1>
       <hr />
       <Avatar/>
-      <h3>Copyright 2024 by won</h3>
+      <h3>{footerMessage}</h3>
     </>
   )
 }
