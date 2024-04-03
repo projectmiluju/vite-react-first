@@ -1,4 +1,4 @@
-export default function Avatar({shoes, size=(200)}){
+export default function Avatar({shoes, size=200}){
     return(
         <img
             className="avatar"
