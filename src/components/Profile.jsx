@@ -1,4 +1,5 @@
 import Avatar from "./Avatar";
+import Card from "./Card";
 
 export default function Profile(){
     const shoes = {
@@ -8,9 +9,10 @@ export default function Profile(){
     const size = 90;
     return(
     <>
-       <Avatar shoes={shoes} size={size}/>
-       <Avatar shoes={shoes} size={130}/>
-       <Avatar shoes={shoes}/>
-    </>
+        <Card>
+            <Avatar shoes={shoes} size={size}/>
+        </Card>
+        <Avatar shoes={shoes} size={size}/>    
+        </>
     );
 }
