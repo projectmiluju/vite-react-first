@@ -1,11 +1,11 @@
-export default function Avatar(props){
+export default function Avatar({shoes, size=(200)}){
     return(
         <img
             className="avatar"
-            src={props.shoes.imageUrl}
-            alt={props.shoes.name}
-            width={props.size}
-            height={props.size}
+            src={shoes.imageUrl}
+            alt={shoes.name}
+            width={size}
+            height={size}
         />
     );
 }

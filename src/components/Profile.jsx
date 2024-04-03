@@ -10,6 +10,7 @@ export default function Profile(){
     <>
        <Avatar shoes={shoes} size={size}/>
        <Avatar shoes={shoes} size={130}/>
+       <Avatar shoes={shoes}/>
     </>
     );
 }
