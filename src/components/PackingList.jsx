@@ -2,19 +2,21 @@ import Item from './Item'
 
 export default function PackingList() {
 
-    const PackingList = [
+    const packingList = [
         'Space Suit',
         'Helmet with a golden leaf',
         'Photo of Tam'
     ];
 
+    const items = packingList.map(item =>
+        <Item name={item} isPacked={true} />
+    );
+
     return (
         <section>
             <h1>Sally Ride's Packing List</h1>
             <ul>
-                <Item name={packingList[0]} isPacked={true}/>
-                <Item name={packingList[1]} isPacked={true}/>
-                <Item name={packingList[2]} isPacled={true}/>
+                { items }
             </ul>
         </section>
     )
