@@ -12,9 +12,9 @@ export default function PackingList() {
         <section>
             <h1>Sally Ride's Packing List</h1>
             <ul>
-                <Item name={packingList[0]} />
-                <Item name={packingList[1]} />
-                <Item name={packingList[2]} />
+                <Item name={packingList[0]} isPacked={true}/>
+                <Item name={packingList[1]} isPacked={true}/>
+                <Item name={packingList[2]} isPacled={true}/>
             </ul>
         </section>
     )
