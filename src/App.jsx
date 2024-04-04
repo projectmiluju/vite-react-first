@@ -4,7 +4,7 @@ import { people } from './data.js';
 export default function List() {
 
   const personList = people.map(person => 
-    <li>
+    <li key={person.id}>
         <img
           src={person.imageUrl}
           alt={person.name}
@@ -16,7 +16,7 @@ export default function List() {
         </p>
       </li>
   )
-  
+
   return (
     <ul>
       {personList}
