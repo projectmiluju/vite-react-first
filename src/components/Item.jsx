@@ -11,9 +11,16 @@ export default function Item({ name, isPacked }){
     // }
 
     // 삼항연산자 사용
+    // return (
+    //     <li>
+    //         {isPacked ? name + '!': name}
+    //     </li>
+    // )
+
+    // 논리 연산자
     return (
         <li>
-            {isPacked ? name + '!': name}
+            {name} { isPacked && '✔'}
         </li>
     )
 }
