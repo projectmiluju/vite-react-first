@@ -1,10 +1,25 @@
-import './App.css'
-import Profile from './components/Profile'
-import PackingList from './components/PackingList'
+import './App.css';
+import { people } from './data.js';
 
-export default function App() {
-  return (
-    // <Profile/>
-    <PackingList/>
+export default function List() {
+
+  const personList = people.map(person => 
+    <li>
+        <img
+          src={person.imageUrl}
+          alt={person.name}
+        />
+        <p>
+          <b>{person.name}</b>
+          {' ' + person.profession + ' '}
+          known for {person.accomplishment}
+        </p>
+      </li>
   )
+  
+  return (
+    <ul>
+      {personList}
+    </ul>
+  );
 }
