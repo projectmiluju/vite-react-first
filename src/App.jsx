@@ -1,4 +1,5 @@
 import BasicButton from "./components/BasicButton";
+import UseRefHookDemo from "./components/UseRefHookDemo";
 
 export default function App() {
   
@@ -20,6 +21,9 @@ export default function App() {
         <BasicButton onClick={() => alert('Playing!')}>Play Movie</BasicButton>
         <BasicButton onClick={() => alert('Uploading!')}>Uploading Image</BasicButton>
       </div>
+      
+      <hr/>
+      <UseRefHookDemo></UseRefHookDemo>
     </>
   );
 }
