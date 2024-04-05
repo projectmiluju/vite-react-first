@@ -1,25 +1,18 @@
-import './App.css';
-import { people } from './data.js';
+import BasicButton from "./components/BasicButton";
 
-export default function List() {
+export default function App() {
+  
+  // function buttonCliked() {
+  //   alert("hi");
+  // }
 
-  const personList = people.map(person => 
-    <li key={person.id}>
-        <img
-          src={person.imageUrl}
-          alt={person.name}
-        />
-        <p>
-          <b>{person.name}</b>
-          {' ' + person.profession + ' '}
-          known for {person.accomplishment}
-        </p>
-      </li>
-  )
-
+  const buttonCliked = () => {
+    arlert("hi");
+  }
+  
   return (
-    <ul>
-      {personList}
-    </ul>
+    <>
+      <BasicButton onClick={buttonCliked}></BasicButton>
+    </>
   );
 }
