@@ -1,5 +1,8 @@
 export default function BasicButton({onClick, children}) {
     return(
-        <button onClick={onClick}>{children}</button>
+        <button onClick={e => {
+            e.stopPropagation();
+            onClick();
+        }}>{children}</button>
     );
 }

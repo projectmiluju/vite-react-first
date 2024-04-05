@@ -17,14 +17,8 @@ export default function App() {
       <hr/>
 
       <div className="Toolbar" onClick={() => alert('you clicked on the toolbar')}>
-        <button onClick={e => {
-            e.stopPropagation();
-            alert('Playing!')
-          }}>Play Movie</button>
-        <button onClick={e => {
-            e.stopPropagation()
-            alert('Uploading!')
-          }}>Uploading Image</button>
+        <BasicButton onClick={() => alert('Playing!')}>Play Movie</BasicButton>
+        <BasicButton onClick={() => alert('Uploading!')}>Uploading Image</BasicButton>
       </div>
     </>
   );
