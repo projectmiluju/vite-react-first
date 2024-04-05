@@ -12,7 +12,7 @@ export default function App() {
   
   return (
     <>
-      <BasicButton onClick={buttonCliked}></BasicButton>
+      <BasicButton onClick={buttonCliked}>클릭해주세요</BasicButton>
     </>
   );
 }

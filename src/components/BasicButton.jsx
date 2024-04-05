@@ -1,5 +1,5 @@
-export default function BasicButton(props) {
+export default function BasicButton({onClick, children}) {
     return(
-        <button onClick={props.onClick}>click me..</button>
+        <button onClick={onClick}>{children}</button>
     );
 }
