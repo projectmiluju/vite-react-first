@@ -1,29 +1,20 @@
-import BasicButton from "./components/BasicButton";
-import UseRefHookDemo from "./components/UseRefHookDemo";
+import { useState } from "react";
 
 export default function App() {
   
-  // function buttonCliked() {
-  //   alert("hi");
-  // }
+  const [count, setCount] = useState(0);
 
-  const buttonCliked = () => {
-    arlert("hi");
+  const increase = () =>{
+    setCount(count + 1)
   }
-  
+
+  const decrease = () =>{
+    setCount(count -1)
+  }
+
   return (
     <>
-      <BasicButton onClick={buttonCliked}>클릭해주세요</BasicButton>
-
-      <hr/>
-
-      <div className="Toolbar" onClick={() => alert('you clicked on the toolbar')}>
-        <BasicButton onClick={() => alert('Playing!')}>Play Movie</BasicButton>
-        <BasicButton onClick={() => alert('Uploading!')}>Uploading Image</BasicButton>
-      </div>
-      
-      <hr/>
-      <UseRefHookDemo></UseRefHookDemo>
+      <button onClick={decrease}>-</button> {count} <button onClick={increase}>+</button>
     </>
-  );
+  )
 }
